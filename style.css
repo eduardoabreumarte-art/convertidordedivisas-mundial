@@ -1,0 +1,99 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+/* Header */
+header {
+  text-align: center;
+  background: #0051e6;
+  color: white;
+  padding: 5px 10px; /* Menos alto y con algo de espacio horizontal */
+}
+
+/* Logo grande y responsive */
+#logo {
+  width: 80%;          /* Ocupa 80% del ancho de la pantalla */
+  max-width: 200px;    /* Tamaño máximo para pantallas grandes */
+  height: auto;        /* Mantiene proporciones */
+  display: block;
+  margin: 0 auto;      /* Centrado horizontal */
+}
+
+/* Título responsive */
+header h1 {
+  font-size: 5vw;      /* Escala según el ancho de la pantalla */
+  margin: 5px 0;       /* Ajusta espacio superior e inferior */
+  line-height: 1.2;    /* Espaciado entre líneas */
+}
+
+/* Ajuste para pantallas muy pequeñas */
+@media screen and (max-width: 500px) {
+  #logo {
+    width: 90%;        /* Ocupa más ancho en móviles */
+  }
+  header h1 {
+    font-size: 7vw;    /* Texto un poco más grande para móviles */
+  }
+}
+
+}
+
+/* Logo grande, ocupa casi todo el ancho */
+#logo {
+  width: 10%;      /* Ocupa el 90% del ancho de la página */
+  max-width: 200px; /* Limita el tamaño máximo */
+  height: auto;    /* Mantiene proporciones */
+  display: block;
+  margin: 0 auto 10px auto; /* Centrado horizontal */
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.2);
+  margin: 10px;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  background: #0073e6;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  background: #005bb5;
+  transform: scale(1.05);
+}
+
+.ad {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.ad-side {
+  width: 200px;
+}
+
+
